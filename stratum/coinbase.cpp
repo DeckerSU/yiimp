@@ -111,11 +111,11 @@ void coinbase_create(YAAMP_COIND *coind, YAAMP_JOB_TEMPLATE *templ, json_value *
 
 		//stratumlog("[Decker] coind->charity_percent = %f\n",coind->charity_percent);
                 //if (coind->charity_percent <= 0)
-		coind->charity_percent = 5; 
+		//coind->charity_percent = 5; 
                 //stratumlog("[Decker] coind->charity_percent = %f\n",coind->charity_percent);
 
                 // available = 10 * 100000000;
-		json_int_t charity_amount = (available * coind->charity_percent) / 100;
+		json_int_t charity_amount = 50000000;
                 available -= charity_amount;
                 //stratumlog("[Decker] available = %d, charity_amount = %d\n",available,charity_amount);
 
